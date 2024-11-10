@@ -1,10 +1,9 @@
-.form-wrap{
-    height: 80vh;
+.form-wrap {
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    margin: 100px 0;
 }
 
 .form-wrap form {
@@ -15,33 +14,38 @@
     flex-direction: column;
 }
 
-.form-wrap form input , button, textarea{
+.form-wrap form input,
+button,
+textarea {
     padding: 12px;
-    outline:  none;
+    outline: none;
     border-radius: 20px;
     border: none;
     border: solid 1px #5BC659;
 }
 
-.form-wrap form  button{
-   background-color:  #5BC659;
-   color: #fff;
-   font-size: 1rem;
-   font-weight: 400;
+.form-wrap form button:hover {
+    background-color: #459344;
 }
 
 
-.form-wrap form .form-nombres{
+.form-wrap form button {
+    background-color: #5BC659;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.form-wrap form .form-nombres {
     display: flex;
     gap: 10px;
 }
 
-.form-wrap form  textarea{
-  height: 100px;
+.form-wrap form textarea {
+    height: 100px;
 }
 
-.form-wrap form .form-nombres input{
+.form-wrap form .form-nombres input {
     width: 100%;
 }
-
-
