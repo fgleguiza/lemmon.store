@@ -1,22 +1,35 @@
 .form-wrap{
-    padding: 50px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 60px;
+    width: 100%;
 }
 
 .form-wrap form {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     gap: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.form-wrap form input{
+.form-wrap form input , button, textarea{
     padding: 12px;
+    outline:  none;
+    border-radius: 20px;
+    border: none;
+    border: solid 1px #5BC659;
 }
+
+.form-wrap form  button{
+   background-color:  #5BC659;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 400;
+}
+
 
 .form-wrap form .form-nombres{
     display: flex;
@@ -31,9 +44,4 @@
     width: 100%;
 }
 
-
-.form-wrap form  button{
-    padding: 20px;
-    width: 100%;
-}
 
