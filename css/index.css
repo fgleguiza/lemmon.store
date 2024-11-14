@@ -76,6 +76,7 @@ ul li .contactUs:hover {
     height: 100vh;
     display: flex;
     justify-content: center;
+
 }
 
 .hero-wrap img {
@@ -153,47 +154,70 @@ footer {
 
 @media (min-width : 1024px) {
     #nosotros {
-        height: 100vh;
+        height: 50vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        gap: 60px;
+        align-items: center;
+        justify-content: center;
+        /* Espacio entre la sección superior y el icono */
+        gap: 50px;
+        padding: 20px;
     }
 
-    #nosotros  i {
+    #nosotros i {
         color: var(--color-green);
         font-size: 48px;
+        /* Centrado en el eje horizontal */
     }
 
-
-    #nosotros .nosotros-wrap  {
+    #nosotros .nosotros-wrap {
         display: flex;
+        width: 100%;
+        max-width: 1200px;
+        /* Define un ancho máximo opcional */
+        justify-content: center;
+        gap: 20px;
     }
 
-   
+    #nosotros .nosotros-wrap .nosotros-text,
+    #nosotros .nosotros-wrap .nosotros-img {
+        flex: 1;
+        max-width: 50%;
+        /* Ambos ocupan el 50% */
+    }
 
     #nosotros .nosotros-wrap .nosotros-text {
-        padding: 40px;
-        text-align: center;
+        padding: 100px 10px;
         font-size: 24px;
+        border-left: solid 4px #5BC659;
+        text-align: center;
     }
 
     #nosotros .nosotros-wrap .nosotros-img {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         padding: 20px 0;
     }
 
     #nosotros .nosotros-wrap .nosotros-img img {
-        border-radius: 10px 10px;
-        width: 300px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 300px;
     }
-
 
     #nosotros .nosotros-wrap .nosotros-img .img2 {
         position: relative;
-        top: 50px;
+        top: 60px;
     }
+
+
+    #nosotros .nosotros-wrap .nosotros-img .img1 {
+        position: relative;
+        bottom: 60px;
+    }
+
 
     #products {
         height: 100vh;
@@ -201,6 +225,8 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
+        max-width: 1200px;
         gap: 40px;
     }
 
@@ -242,9 +268,9 @@ footer {
     }
 
     #products .products-wrap a img {
+        object-fit: cover;
         width: 100%;
         height: auto;
-        object-fit: cover;
         transition: transform 0.3s ease-in-out;
     }
 
@@ -287,8 +313,8 @@ footer {
         font-size: 48px;
     }
 
-    
-    #nosotros .nosotros-wrap  {
+
+    #nosotros .nosotros-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -451,8 +477,8 @@ footer {
         gap: 20px;
     }
 
-      
-    #nosotros .nosotros-wrap  {
+
+    #nosotros .nosotros-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -573,4 +599,3 @@ footer {
         border: solid 1px var(--color-white-2);
     }
 }
-
