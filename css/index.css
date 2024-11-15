@@ -144,13 +144,86 @@ ul li .contactUs:hover {
     /* Aplica la animación */
 }
 
-
 footer {
-    background-color: #5bc65917;
-    border-top: solid 1px var(--color-white-2);
+    font-family: "Montserrat", sans-serif;
     padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: solid 1px var(--color-white-2);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 60%, rgba(189, 232, 189, 1) 100%);
 }
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap:wrap;
+}
+
+.footer-ub{
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+.footer-red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.contact-list li {
+    margin-bottom: 8px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover {
+    color: #007bff;
+}
+
+.footer-red a i {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #5BC659;
+}
+
+
+
+
+
 
 @media (min-width : 1024px) {
     #nosotros {
@@ -159,7 +232,6 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* Espacio entre la sección superior y el icono */
         gap: 50px;
         padding: 20px;
     }
@@ -167,14 +239,12 @@ footer {
     #nosotros i {
         color: var(--color-green);
         font-size: 48px;
-        /* Centrado en el eje horizontal */
     }
 
     #nosotros .nosotros-wrap {
         display: flex;
         width: 100%;
         max-width: 1200px;
-        /* Define un ancho máximo opcional */
         justify-content: center;
         gap: 20px;
     }
@@ -183,7 +253,6 @@ footer {
     #nosotros .nosotros-wrap .nosotros-img {
         flex: 1;
         max-width: 50%;
-        /* Ambos ocupan el 50% */
     }
 
     #nosotros .nosotros-wrap .nosotros-text {
@@ -212,12 +281,10 @@ footer {
         top: 60px;
     }
 
-
     #nosotros .nosotros-wrap .nosotros-img .img1 {
         position: relative;
         bottom: 60px;
     }
-
 
     #products {
         height: 100vh;
@@ -598,4 +665,7 @@ footer {
         border-radius: 10px;
         border: solid 1px var(--color-white-2);
     }
+
+   
+    
 }
