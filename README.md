@@ -1,0 +1,3 @@
+El sitio web de Lemmon Store esta enfocado en la comercializacion B2C (Empresa a Consumidor) de medias y llaveros. Ofreciendole a los consumidores una amplia selección de productos de exclente calidad a un precio accesible.
+Con sus productos de calidad y rápida entrega, busca proporcionar comodidad y personalidad ya sea para uso personal o como regalo. 
+El sitio web cuenta con dos secciones, en cada una de ellas podran encontrar el catalogo de cada division del emprendimiento. Por un lado esta la sección "Medias" la cual esta compuesta por medias de niños, mujer y hombre. La siguiente sección "Llaveros" muestra el catalogo de dichos productos.
