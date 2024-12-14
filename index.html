@@ -6,84 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./asset/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <title>Lemmon Store</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="./asset/img/logoLemmon.svg" alt="">
-            <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a class="contactUs" href="./page/contacto.html">Contactanos</a></li>
-            </ul>
+
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./asset/img/logoLemmon.svg" alt="Logo Lemmon Store">
+                </a>
+
+                <!-- boton -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- contenido nabegable -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+                        <li class="nav-item contactUs">
+                            <a class="nav-link " href="./page/contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
+
     <main>
-
-        <section id="hero">
-            <div class="hero-wrap">
-                <img src="./asset/img/logoLemmon.svg" alt="">
-                <h1>¡Bienvenidos a Lemmon Store! </h1>
-                <h2>Medias y llaveros con la calidad y estilo que mereces. ¡Todo a solo
-                    click!.
-                </h2>
-                <a href="#nosotros" class="btn">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-                <div class="marcas">
-                    <img src="./asset/img/ELEMETO-LOGO.png"></img>
-                    <img src="./asset/img/LOGO-FLOYD.png"></img>
-                    <img src="./asset/img/LOGO-MUNDO.png"></img>
-                    <img src="./asset/img/LOGO-AMANECER.png"></img>
+        <section id="hero" class="hero-wrap d-flex justify-content-center align-items-center vh-100 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img class="mb-2" src="./asset/img/logoLemmon.svg" alt="Logo Lemmon Store" class="img-fluid">
+                        <h1 class="mb-2">¡Bienvenidos a Lemmon Store!</h1>
+                        <h2 class="mb-2">Medias y llaveros con la calidad y estilo que mereces.</h2>
+                        <a class="btn btn-primary mt-4" href="#nosotros" aria-label="Desplazarse a la sección Nosotros">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-4 text-center logos">
+                    <div class="col-6 col-md-3">
+                        <img src="./asset/img/ELEMETO-LOGO.png" alt="Logo de la empresa Elemeto" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./asset/img/LOGO-FLOYD.png" alt="Logo de la empresa Floyd" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./asset/img/LOGO-MUNDO.png" alt="Logo de la empresa Mundo" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <img src="./asset/img/LOGO-AMANECER.png" alt="Logo de la empresa Amanecer" class="img-fluid"
+                            loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="nosotros">
-
-            <div class="nosotros-wrap">
-
-                <div class="nosotros-img">
-                    <img class="img1" src="./asset/img/panel-tienda.svg" alt="">
-                    <img class="img2" src="./asset/img/cmpras-personas.svg" alt="">
+        <section id="nosotros" class="d-flex justify-content-center align-items-center vh-100 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Imagen -->
+                    <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+                        <img src="./asset/img/nosotros.svg" alt="Imagen de Lemmon Store" class="img-fluid">
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-12 col-md-6 wrap-text text-center">
+                        <h2>¿Quienes somos?</h2>
+                        <p>
+                            En <b>Lemmon Store</b>, traemos para ti una selección única de medias coloridas y
+                            originales, perfectas para todos los gustos, desde diseños animados hasta estilos modernos y
+                            atrevidos. Además, contamos con una increíble colección de llaveros inspirados en tus
+                            personajes favoritos de series y películas. ¡Encuentra el complemento perfecto para expresar
+                            tu personalidad con estilo!
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="nosotros-text">
 
-                    En <b>Lemmon Store</b>, nos dedicamos a ofrecer accesorios únicos que realzan tu estilo y
-                    personalidad. Con
-                    nuestra selección exclusiva de medias y llaveros, combinamos calidad, originalidad y tendencias
-                    actuales para que encuentres el complemento perfecto. ¡Gracias por elegirnos para expresar quién
-                    eres!
+        <section id="products" class="d-flex justify-content-center bg-light">
+            <div class="container">
+                <!-- Sección de Llavero -->
+                <div class="row mb-5">
+                    <h2 class="mb-5">Llavero de personajes animados con tus medias favoritas</h2>
+
+                    <!-- Producto 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="../asset/img/llaveritos/pll (1).jpeg" alt="Llavero diseño 1"
+                                class="card-img-top shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <p class="card-text">Mike Wazowski Pequeño</p>
+                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
+                                <!-- <button class="btn btn-success mt-2 shadow-sm"><i
+                                        class="fa-solid fa-cart-plus fs-4"></i></button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="../asset/img/medias/med1 (7).jpg" alt="Llavero diseño 1"
+                                class="card-img-top shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <p class="card-text">Medias mujer 3/4 - elementos</p>
+                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <a class="card h-100 text-center">
+                            <img src="../asset/img/llaveritos/pll (8).jpeg" alt="Llavero diseño 1"
+                                class="card-img-top shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <p class="card-text">Rock Lee</p>
+                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Producto 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="./asset/img/medias/med1 (4).jpg" alt="Llavero diseño 1"
+                                class="card-img-top shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <p class="card-text">Medias mujer 3/4 - elementos</p>
+                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
         </section>
 
-        <section id="products">
-            <h3>Productos</h3>
-            <div class="products-wrap">
-                <a href="./page/productosMedias.html">
-                    <p>Medias</p>
-                    <img src="./asset/img/producto3.jpeg" alt="">
 
-                </a>
-                <a href="./page/productosLLaveritos.html">
-                    <p>LLaveros</p>
-                    <img src="./asset/img/llaveros_dos.jpeg" alt="">
-                </a>
-            </div>
 
-        </section>
 
     </main>
     <footer>
         <p>@Facundo Gerardo Leguiza 2024</p>
     </footer>
 </body>
+
+
+<script src="./asset/libs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
