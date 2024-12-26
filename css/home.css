@@ -1,0 +1,26 @@
+#hero {
+    .logo-home {
+        width: 100%;
+    }
+
+    .logos img {
+        height: 100px;
+        opacity: 20%;
+    }
+
+    a {
+        margin: 20px 0;
+        border-radius: 30px;
+        padding: 10px 40px;
+        font-size: 1.3rem;
+        color: var(--color-white) !important;
+        text-decoration: none;
+        border: none;
+        background-color: var(--color-green);
+    }
+
+    a:hover {
+        background-color: #459344;
+    }
+
+}

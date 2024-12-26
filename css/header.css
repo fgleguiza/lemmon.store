@@ -1,0 +1,22 @@
+/* header navbar */
+header {
+    backdrop-filter: blur(10px);
+    top: 0;
+    position: sticky;
+    z-index: 20;
+}
+
+
+.contactUs {
+    background-color: var(--color-green);
+    border-radius: 20px;
+    padding: 0px 10px !important;
+
+    a {
+        color: var(--color-white) !important;
+    }
+}
+
+.contactUs:hover {
+    background-color: #459344;
+}

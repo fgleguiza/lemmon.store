@@ -12,13 +12,12 @@
 
 
 <body>
-    <header class="container-fluid">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
-
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="./asset/img/logoLemmon.svg" alt="Logo Lemmon Store">
+                    <img src="./asset/img/logo-lemmon.svg" alt="Logo Lemmon Store">
                 </a>
 
                 <!-- boton -->
@@ -32,11 +31,11 @@
                 <!-- contenido nabegable -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#products">Productos</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#hero">Inicio</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#products">Productos</a></li>
                         <li class="nav-item contactUs">
-                            <a class="nav-link " href="./page/contacto.html">Contáctanos</a>
+                            <a class="nav-link" href="./page/contacto.html">Contáctanos</a>
                         </li>
                     </ul>
                 </div>
@@ -46,32 +45,41 @@
     </header>
 
     <main>
-        <section id="hero" class="container hero-wrap vh-100 text-center">
-            <div class="row text-justify">
-                <div class="col-6">
-                    <h1 class="mb-2">¡Bienvenidos a Lemmon Store!</h1>
-                    <h2 class="mb-2">Medias y llaveros con la calidad y estilo que mereces.</h2>
-                </div>
-                <div class="col-6">
-                    <img src="./asset/img/Imagen-HOME.svg" alt="home lemmon store" class="img-fluid img-home">
+        <section id="hero" class="d-flex flex-column vh-100 align-items-center justify-content-center ">
+            <div class="container mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1>
+                            Todas las medias que buscas, calidad y estilo en
+                            <b>Lemmon Store</b> solo a un <b>click</b> de distancia!.
+                        </h1>
+                        <a class="btn btn-primary mt-4" href="#nosotros" aria-label="Desplazarse a la sección Nosotros">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-4 ">
+                        <img src="./asset/img/Imagen-HOME.svg" alt="home lemmon store" class="img-fluid logo-home">
+                    </div>
                 </div>
             </div>
-            <div class="row mt-10">
-                <div class="col-6 col-md-3">
-                    <img src="./asset/img/ELEMETO-LOGO.png" alt="Logo de la empresa Elemeto" class="img-fluid"
-                        loading="lazy">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="./asset/img/LOGO-FLOYD.png" alt="Logo de la empresa Floyd" class="img-fluid"
-                        loading="lazy">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="./asset/img/LOGO-MUNDO.png" alt="Logo de la empresa Mundo" class="img-fluid"
-                        loading="lazy">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="./asset/img/LOGO-AMANECER.png" alt="Logo de la empresa Amanecer" class="img-fluid"
-                        loading="lazy">
+            <div class="container mt-5">
+                <div class="row logos">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <img src="./asset/img/ELEMETO-LOGO.png" alt="Logo de la empresa Elemeto" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 ">
+                        <img src="./asset/img/LOGO-FLOYD.png" alt="Logo de la empresa Floyd" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4">
+                        <img src="./asset/img/LOGO-MUNDO.png" alt="Logo de la empresa Mundo" class="img-fluid"
+                            loading="lazy">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <img src="./asset/img/LOGO-AMANECER.png" alt="Logo de la empresa Amanecer" class="img-fluid"
+                            loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>

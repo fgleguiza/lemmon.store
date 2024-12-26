@@ -1,8 +1,10 @@
+@import url('./header.css');
+@import url('./home.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color-white: #ffff;
-    --color-green: #5BC659;
+    --color-green: #438642;
     --color-white-2: #d1ebda
 }
 
@@ -11,73 +13,14 @@ html {
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     margin: 0;
     padding: 0;
 }
 
 
-/* header navbar */
-header {
-    background-color: rgba(255, 255, 255, 0.117);
-    backdrop-filter: blur(10px);
-    top: 0;
-    position: sticky;
-    border-bottom: solid 1px var(--color-white-2);
-    z-index: 20;
+body {
+    background: linear-gradient(to right, #ffffff, #5ba567);
 }
-
-
-.contactUs {
-    background-color: var(--color-green);
-    border-radius: 20px;
-    padding: 0px 10px !important;
-
-    a {
-        color: var(--color-white) !important;
-    }
-}
-
-.contactUs:hover {
-    background-color: #459344;
-}
-
-
-
-
-/* hero */
-.hero-wrap {
-
-
-    img {
-        height: 100px;
-    }
-
-    a {
-        margin: 20px 0;
-        border-radius: 30px;
-        padding: 10px 40px;
-        font-size: 1.3rem;
-        color: var(--color-white) !important;
-        text-decoration: none;
-        border: none;
-        background-color: var(--color-green);
-    }
-
-    .logos img {
-        opacity: 20%;
-    }
-
-}
-
-.hero-wrap a:hover {
-    background-color: #459344;
-}
-
-
 
 
 
@@ -88,8 +31,7 @@ header {
 }
 
 
-
-#products {
+S #products {
     padding: 50px;
 }
 
