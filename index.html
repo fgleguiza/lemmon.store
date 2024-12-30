@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./asset/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/productos.css">
     <title>Lemmon Store</title>
 </head>
 
@@ -34,6 +35,7 @@
                         <li class="nav-item me-4"><a class="nav-link" href="#hero">Inicio</a></li>
                         <li class="nav-item me-4"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                         <li class="nav-item me-4"><a class="nav-link" href="#products">Productos</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="./page/carrito.html">Carrito</a></li>
                         <li class="nav-item contactUs">
                             <a class="nav-link" href="./page/contacto.html">Contáctanos</a>
                         </li>
@@ -50,7 +52,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-8">
                         <h1>
-                            Todas las medias que buscas, calidad y estilo en
+                            Todas las producto que buscas calidad y estilo en
                             <b>Lemmon Store</b> solo a un <b>click</b> de distancia!.
                         </h1>
                         <a class="btn btn-primary mt-4" href="#nosotros" aria-label="Desplazarse a la sección Nosotros">
@@ -92,15 +94,15 @@
                         <img src="./asset/img/nosotros.svg" alt="Imagen de Lemmon Store" class="img-fluid">
                     </div>
                     <!-- Texto -->
-                    <div class="col-12 col-md-6 wrap-text text-center">
-                        <h2>¿Quienes somos?</h2>
-                        <p>
-                            En <b>Lemmon Store</b>, traemos para ti una selección única de medias coloridas y
-                            originales, perfectas para todos los gustos, desde diseños animados hasta estilos modernos y
-                            atrevidos. Además, contamos con una increíble colección de llaveros inspirados en tus
-                            personajes favoritos de series y películas. ¡Encuentra el complemento perfecto para expresar
-                            tu personalidad con estilo!
-                        </p>
+                    <div class="col-12 col-md-6 wrap-text text-justify">
+                        <h2 class="text-center">¿Quienes somos?</h2>
+                        <h4>En <b>Lemmon Store </b> contamos con una increíble selección de productos, desde remeras y
+                            gorras
+                            hasta pantalones. Cada artículo está diseñado para combinar estilo, calidad y originalidad,
+                            asegurándonos de que
+                            encuentres el complemento perfecto para expresar tu personalidad. ¡Explora nuestra colección
+                            y descubre cómo destacar con Lemmon Store!
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -110,58 +112,9 @@
         <section id="products" class="d-flex justify-content-center bg-light">
             <div class="container">
                 <!-- Sección de Llavero -->
-                <div class="row mb-5">
-                    <h2 class="mb-5">Llavero de personajes animados con tus medias favoritas</h2>
-
-                    <!-- Producto 1 -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <div class="card h-100 text-center">
-                            <img src="../asset/img/llaveritos/pll (1).jpeg" alt="Llavero diseño 1"
-                                class="card-img-top shadow-sm">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <p class="card-text">Mike Wazowski Pequeño</p>
-                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
-                                <!-- <button class="btn btn-success mt-2 shadow-sm"><i
-                                        class="fa-solid fa-cart-plus fs-4"></i></button> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <div class="card h-100 text-center">
-                            <img src="../asset/img/medias/med1 (7).jpg" alt="Llavero diseño 1"
-                                class="card-img-top shadow-sm">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <p class="card-text">Medias mujer 3/4 - elementos</p>
-                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <a class="card h-100 text-center">
-                            <img src="../asset/img/llaveritos/pll (8).jpeg" alt="Llavero diseño 1"
-                                class="card-img-top shadow-sm">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <p class="card-text">Rock Lee</p>
-                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Producto 1 -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <div class="card h-100 text-center">
-                            <img src="./asset/img/medias/med1 (4).jpg" alt="Llavero diseño 1"
-                                class="card-img-top shadow-sm">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <p class="card-text">Medias mujer 3/4 - elementos</p>
-                                <p class="fs-5"><i class="fa-solid fa-dollar-sign"></i> 2500</p>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <div class="row mb-5 gap-4  d-flex justify-content-between align-items-center" id="containerItemIndex">
+                    <h2 class="text-center">Productos</h2>
+                    <hr>
                 </div>
 
             </div>
@@ -175,7 +128,7 @@
         <p>@Facundo Gerardo Leguiza 2024</p>
     </footer>
 </body>
-
+<script src="./js/productos.js"></script>
 <script src="./asset/libs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

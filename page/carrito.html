@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../asset/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/productos.css">
     <link rel="stylesheet" href="../css/index.css">
 
     <title>Lemmon Store</title>
@@ -33,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item me-4"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item me-4"><a class="nav-link" href="./carrito.html">Carrito</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="./productos.html">Productos</a></li>
                         <li class="nav-item contactUs">
                             <a class="nav-link" href="./contacto.html">Contáctanos</a>
                         </li>
@@ -45,10 +44,23 @@
     </header>
     <main>
         <div class="container p-5">
-            <div class="row gap-4  d-flex justify-content-center align-items-center" id="productosContainer">
-                <h2 class="text-center">Productos</h2>
+            <h2 class="text-center  d-flex justify-content-center align-items-center"">Carrito</h2>
                 <hr>
-            </div>
+                <table class=" table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Prodcuto</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                </table>
+        </div>
         </div>
     </main>
     <footer>

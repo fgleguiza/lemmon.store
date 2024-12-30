@@ -1,5 +1,4 @@
-
- .target-producto {
+.target-producto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +13,7 @@
     border: solid 2px #d1ebda
 }
 
- .target-producto img {
+.target-producto img {
     object-fit: cover;
     height: 195px;
     width: 200px;
@@ -34,6 +33,25 @@
     font-weight: 400;
 }
 
- .target-producto button:hover {
+.target-producto button:hover {
+    background-color: #459344;
+}
+
+
+.target-producto a {
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    border: solid 1px #d1ebda;
+    background-color: #5BC659;
+    color: #fff;
+    font-weight: 400;
+}
+
+.target-producto a:hover {
     background-color: #459344;
 }

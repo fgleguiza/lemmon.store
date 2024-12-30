@@ -18,14 +18,13 @@ html {
 }
 
 
-.productsImg{
+.productsImg {
     height: 100px;
 }
 
 body {
-    background: linear-gradient(to right, #ffffff, #5ba567);
+    background: linear-gradient(to right, #ffffff, #bdebc4);
 }
-
 
 
 #nosotros img {
@@ -70,7 +69,27 @@ S #products {
     transition: 0.5s;
 }
 
+td img {
+    height: 50px;
+}
 
+
+td button {
+    text-align: center;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    border: solid 1px #d1ebda;
+    background-color: #5BC659;
+    color: #fff;
+    font-weight: 400;
+}
+
+td button:hover {
+    background-color: #459344;
+}
 
 footer {
     border-top: solid 1px var(--color-white-2);
