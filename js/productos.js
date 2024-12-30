@@ -10,11 +10,14 @@ async function displayProducts() {
 
     let item = '';
     products.forEach(element => {
-        console.log(element.images[0]);
         const imageUrl = element.images[0];
-        item += `<div class="col-3">
-                    <img loading="lazy" src="${imageUrl}" alt="${element.title}">
-                </div>`;
+        item += `
+            <div class="target-producto col-3">
+                <img src="${imageUrl} alt="${element.title}"
+                    alt="">
+                <p>Precio : $${element.price}</p>
+                <button>AGREGAR AL CARRITO</button>
+            </div>`;
     });
     productosContainer.innerHTML = item;
 }

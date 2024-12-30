@@ -18,6 +18,10 @@ html {
 }
 
 
+.productsImg{
+    height: 100px;
+}
+
 body {
     background: linear-gradient(to right, #ffffff, #5ba567);
 }

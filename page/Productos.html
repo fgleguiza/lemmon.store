@@ -5,35 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../asset/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/index.css">
 
     <title>Lemmon Store</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="../asset/img/logoLemmon.svg" alt="">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a class="contactUs" href="./contacto.html">Contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../asset/img/logo-lemmon.svg" alt="Logo Lemmon Store">
+                </a>
+
+                <!-- boton -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- contenido nabegable -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-4"><a class="nav-link" href="#hero">Inicio</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#products">Productos</a></li>
+                        <li class="nav-item contactUs">
+                            <a class="nav-link" href="./page/contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
     <main>
-        <div class="conatainer">
-            <div class="row" id="productosContainer">
-            </div>
-        </div>
-        <div class="productos-wrap">
-            <div class="target-producto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HJg7UevrdbYA-Ynjpdc14ABEDaAvPGWFcA&s"
-                    alt="">
-                <p>$2.558,00</p>
-                <button>AGREGAR AL CARRITO</button>
+        <div class="container">
+            <div class="row gap-4  d-flex justify-content-center align-items-center" id="productosContainer">
             </div>
         </div>
     </main>
